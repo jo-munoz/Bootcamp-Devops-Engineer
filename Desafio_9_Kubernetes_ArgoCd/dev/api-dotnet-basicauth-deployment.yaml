@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: api-dotnet-basicauth-deployment
 spec:
-  replicas:
+  replicas: 3
   selector:
     matchLabels:
       app: api-dotnet-basicauth
