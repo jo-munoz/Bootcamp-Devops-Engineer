@@ -1,0 +1,16 @@
+version: '3'
+services:
+  basic-auth-api:
+    build: .
+    container_name: basic-auth-api
+    ports:
+      - 8080:80
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 3s
+        max_attempts: 5
+        window: 60s
+
+# Tambien puedes ejecutar un contenedor a partir de un Docker Compose:
+# docker compose up -d

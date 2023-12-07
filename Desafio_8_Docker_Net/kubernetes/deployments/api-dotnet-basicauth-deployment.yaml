@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-dotnet-basicauth-deployment
+spec:
+  replicas:
+  selector:
+    matchLabels:
+      app: api-dotnet-basicauth
+  template:
+    metadata:
+      labels:
+        app: api-dotnet-basicauth
+    spec:
+      containers:
+        - name: api-dotnet-basicauth
+          image: devjmunoz/api-dotnet-basicauth
+          env:
+            - name: ASPNETCORE_ENVIRONMENT
+              value: Development
+          ports:
+            - containerPort: 80

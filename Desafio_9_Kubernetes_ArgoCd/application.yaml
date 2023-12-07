@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: dockerapp-argo-application
+  namespace: argo-cd
+spec:
+  project: default
+  source:
+    repoURL: "https://github.com/jo-munoz/Bootcamp-Devops-Engineer"
+    path: Desafio_9_Kubernetes_ArgoCd/dev
+    targetRevision: HEAD
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: dockerapp-namespace
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
