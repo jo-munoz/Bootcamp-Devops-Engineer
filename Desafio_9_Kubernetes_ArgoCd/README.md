@@ -32,10 +32,10 @@ $ kubectl port-forward service/argocd-server -n argo-cd 8080:443
 $ kubectl -n argo-cd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
 ```
 Generar Password:
-![Screenshot](./assets/generate_password.png)
+![Screenshot](./assets/generate_password.PNG)
 
 Autenticación:
-![Screenshot](./assets/autentication.png)
+![Screenshot](./assets/autentication.PNG)
 
 5. En la carpeta Dev crear dos archivos
 - api-dotnet-basicauth-deployment.yaml
@@ -99,7 +99,7 @@ $ kubectl apply -f application.yaml
 Evidecia del correcto funcionamiento:
 
 ArgoCD:
-![Screenshot](./assets/argo_cd_1.png)
+![Screenshot](./assets/argo_cd_1.PNG)
 
 Minikube Namespace:
 ![Screenshot](./assets/minkube.PNG)
