@@ -102,4 +102,4 @@ ArgoCD:
 ![Screenshot](./assets/argo_cd_1.png)
 
 Minikube Namespace:
-![Screenshot](./assets/minkube.png)
+![Screenshot](./assets/minkube.PNG)
