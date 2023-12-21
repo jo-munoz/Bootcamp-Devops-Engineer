@@ -54,7 +54,7 @@ Utiliza herramientas en línea para identificar qué sitios web están hosteados
 
 ### Utilizar dig para obtener las direcciones IP
 ### Identificar la dirección IP de cada sitio
-Abre tu terminal y ejecuta el siguiente comando para obtener las direcciones IP de los sitios web específicos.
+Comando para obtener las direcciones IP de los sitios web específicos
 - Windows:
 
     ```shell
@@ -70,10 +70,8 @@ Abre tu terminal y ejecuta el siguiente comando para obtener las direcciones IP 
 
     ![dig_command_ip](./assets/web_geolocalización.png)
 
-    Esto te proporcionará las direcciones IP asociadas con los sitios web. Tal como se muestra entre paréntesis. Toma nota de las direcciones IP obtenidas anteriormente.
-
-### Utilizar la herramienta geoip
-Utiliza una herramienta como geoiplookup para identificar la geolocalización de cada dirección IP. Asegúrate de tener instalada la herramienta.
+### Herramienta geoip
+Geoiplookup sirve para identificar la geolocalización de cada dirección IP
 - Linux:
 
     ```shell
@@ -85,10 +83,8 @@ Utiliza una herramienta como geoiplookup para identificar la geolocalización de
 
     ![geoiplookup_command_ip](./assets/geoip.png)
 
-    Esto te dará información sobre la ubicación geográfica de cada dirección IP.
-
-### Utilizar nmap para obtener información adicional
-Utiliza nmap para obtener información adicional, como puertos abiertos, de cada dirección IP.
+### Nmap para obtener información adicional
+Nmap sirve para obtener información adicional, como puertos abiertos, de cada dirección IP
 - Linux:
 
     ```shell
@@ -104,12 +100,5 @@ Utiliza nmap para obtener información adicional, como puertos abiertos, de cada
 
     ![nmap_command_ip_3](./assets/nmap_3.png)
 
-    Esto escaneará los puertos de las direcciones IP proporcionando información sobre los puertos abiertos y otros detalles.
-
-    Nota: El uso de herramientas como nmap para escanear puertos sin permiso puede infringir los términos de servicio de algunos proveedores de servicios. Asegúrate de tener el permiso adecuado antes de realizar actividades de escaneo.
-
-    Este conjunto de pasos te permitirá obtener información detallada sobre los sitios web, incluyendo sus direcciones IP, geolocalización y detalles sobre los puertos abiertos utilizando herramientas como dig, geoiplookup y nmap.
-
 ## Conclusión
-- Tras analizar la información recopilada de los sitios web alojados en 'vulnweb.com', se destaca la importancia de abordar ciertos aspectos de seguridad. La exposición de información en los resultados de whois y la identificación de la geolocalización de las direcciones IP resaltan posibles puntos de vulnerabilidad. Además, el escaneo de puertos realizado con nmap revela la presencia de puertos abiertos, lo que podría representar una superficie de ataque para posibles intrusiones.
-- En resumen, se recomienda una evaluación más profunda de la configuración de seguridad, la implementación de medidas de protección adecuadas y la monitorización constante para mitigar riesgos potenciales. Estos hallazgos subrayan la importancia de mantener una postura proactiva en materia de ciberseguridad para prevenir posibles amenazas y fortalecer la seguridad del entorno digital asociado a 'vulnweb.com'.
+- Se recomienda una evaluación más profunda de la configuración de seguridad, la implementación de medidas de protección adecuadas y la monitorización constante para mitigar riesgos potenciales. Estos hallazgos subrayan la importancia de mantener una postura proactiva en materia de ciberseguridad para prevenir posibles amenazas y fortalecer la seguridad del entorno digital asociado a 'vulnweb.com'.
